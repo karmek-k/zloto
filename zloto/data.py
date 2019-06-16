@@ -3,6 +3,7 @@ from datetime import date
 
 import requests
 
+
 class Fetcher:
     url = "http://api.nbp.pl/api/cenyzlota"
     data = b""
