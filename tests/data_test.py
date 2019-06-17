@@ -13,6 +13,8 @@ class JSONParserTest(unittest.TestCase):
         self.assertEqual(self.parser.date, date(2019, 6, 17))
         self.assertEqual(self.parser.price, 163.89)
 
+        self.assertRaises(ValueError, JSONParser, b"")
+
 
 if __name__ == "__main__":
     unittest.main()
